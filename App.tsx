@@ -5,6 +5,7 @@ import { Location } from './src/components/Location'
 export default function App() {
   return (
     <Container>
+      <Location city="Fortaleza" state="CE" />
     </Container>
   );
 }

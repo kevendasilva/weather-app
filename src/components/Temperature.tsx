@@ -15,10 +15,10 @@ export const Temperature: FunctionComponent<TemperatureProps> = ({ temperatureIn
 
 const styles = StyleSheet.create({
   temperature: {
-    fontFamily: 'Roboto',
-    fontWeight: '700',
-    fontSize: 144,
     color: '#000000',
+    fontFamily: 'Roboto',
+    fontSize: 144,
+    fontWeight: '700',
   },
   temperatureContainer: {
     flex: 5,

@@ -19,10 +19,10 @@ export const Weather: FunctionComponent<WeatherProps> = ({ temperature, wind, hu
 
 const styles = StyleSheet.create({
   weather: {
-    fontFamily: 'Roboto',
-    fontWeight: '700',
-    fontSize: 16,
     color: '#000000',
+    fontFamily: 'Roboto',
+    fontSize: 16,
+    fontWeight: '700',
   },
   weatherContainer: {
     flex: 1,

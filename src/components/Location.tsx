@@ -6,7 +6,7 @@ type LocationProps = {
   state: string
 }
 
-export const Location: FunctionComponent<LocationProps> = ({city, state}) => {
+export const Location: FunctionComponent<LocationProps> = ({ city, state }) => {
   return (
     <View style={styles.locationContainer}>
       <Text style={styles.location}>{city} - {state}</Text>
@@ -16,10 +16,10 @@ export const Location: FunctionComponent<LocationProps> = ({city, state}) => {
 
 const styles = StyleSheet.create({
   location: {
-    fontFamily: 'Roboto',
-    fontWeight: '700',
-    fontSize: 22,
     color: '#000000',
+    fontFamily: 'Roboto',
+    fontSize: 22,
+    fontWeight: '700',
   },
   locationContainer: {
     flex: 1,

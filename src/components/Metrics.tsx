@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { FontAwesome5, MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 type MetricsProps = {
   wind: string
@@ -32,10 +32,10 @@ export const Metrics: FunctionComponent<MetricsProps> = ({ wind, humidity, visib
 
 const styles = StyleSheet.create({
   metric: {
-    flex: 1,
     alignItems: 'center',
-    minWidth: 80,
+    flex: 1,
     justifyContent: 'center',
+    minWidth: 80,
   },
   metricsContainer: {
     backgroundColor: '#010001',
@@ -43,23 +43,22 @@ const styles = StyleSheet.create({
     flex: 2,
     flexDirection: 'row',
     gap: 30,
-    paddingVertical: 30,
-    paddingHorizontal: 30,
     margin: 30,
+    padding: 30,
   },
   icon: {
-    marginBottom: 12
+    marginBottom: 12,
   },
   data: {
-    fontFamily: 'Roboto',
-    fontWeight: '700',
-    fontSize: 16,
     color: '#F9F93B',
+    fontFamily: 'Roboto',
+    fontSize: 16,
+    fontWeight: '700',
   },
   label: {
-    fontFamily: 'Roboto',
-    fontWeight: '300',
-    fontSize: 12,
     color: '#F9F93B',
+    fontFamily: 'Roboto',
+    fontSize: 12,
+    fontWeight: '300',
   }
 });

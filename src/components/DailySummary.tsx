@@ -16,14 +16,14 @@ export const DailySummary: FunctionComponent<DailySummaryProps> = ({ content }) 
 
 const styles = StyleSheet.create({
   dailySummary: {
-    fontFamily: 'Roboto',
-    fontWeight: '700',
-    fontSize: 16,
     color: '#000000',
+    fontFamily: 'Roboto',
+    fontSize: 16,
+    fontWeight: '700',
   },
   dailySummaryContainer: {
-    gap: 16,
     flex: 4,
+    gap: 16,
     justifyContent: 'center',
   }
 });

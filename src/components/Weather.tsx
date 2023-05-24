@@ -4,15 +4,14 @@ import { StyleSheet, Text, View } from 'react-native'
 import evaluateWeather from '../utils/EvaluateWeather';
 
 type WeatherProps = {
-  temperature: string
   wind: string
   humidity: string
 };
 
-export const Weather: FunctionComponent<WeatherProps> = ({ temperature, wind, humidity }) => {
+export const Weather: FunctionComponent<WeatherProps> = ({ wind, humidity }) => {
   return (
     <View style={styles.weatherContainer}>
-      <Text style={styles.weather}>{evaluateWeather(temperature, wind, humidity)}</Text>
+      <Text style={styles.weather}>{evaluateWeather(wind, humidity)}</Text>
     </View>
   );
 };

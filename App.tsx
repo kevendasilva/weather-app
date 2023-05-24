@@ -20,7 +20,6 @@ export default function App() {
       <Location city={weatherData.city} state={weatherData.state} />
       <DateTime datetime={weatherData.date} />
       <Weather
-        temperature={weatherData.temperature}
         wind={weatherData.wind}
         humidity={weatherData.humidity}
       />

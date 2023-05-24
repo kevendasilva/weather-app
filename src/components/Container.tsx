@@ -19,5 +19,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#F9F93B',
     alignItems: 'center',
     justifyContent: 'center',
+    gap: 30,
   },
 });

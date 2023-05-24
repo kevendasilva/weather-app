@@ -7,7 +7,7 @@ type TemperatureProps = {
 
 export const Temperature: FunctionComponent<TemperatureProps> = ({ temperatureInDegrees }) => {
   return (
-    <View>
+    <View style={styles.temperatureContainer}>
       <Text style={styles.temperature}>{temperatureInDegrees}</Text>
     </View>
   );
@@ -19,5 +19,9 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 144,
     color: '#000000',
+  },
+  temperatureContainer: {
+    flex: 5,
+    justifyContent: 'center'
   }
 });

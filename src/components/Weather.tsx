@@ -11,7 +11,7 @@ type WeatherProps = {
 
 export const Weather: FunctionComponent<WeatherProps> = ({ temperature, wind, humidity }) => {
   return (
-    <View>
+    <View style={styles.weatherContainer}>
       <Text style={styles.weather}>{evaluateWeather(temperature, wind, humidity)}</Text>
     </View>
   );
@@ -23,5 +23,9 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     fontSize: 16,
     color: '#000000',
+  },
+  weatherContainer: {
+    flex: 1,
+    justifyContent: 'center'
   }
 });

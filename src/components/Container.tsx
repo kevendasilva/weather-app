@@ -8,7 +8,9 @@ type ContainerProps = {
 export const Container: FunctionComponent<ContainerProps> = ({ children }) => {
   return (
     <View style={styles.container}>
+      <View style={{flex: 1}} />
       { children }
+      <View style={{flex: 1}} />
     </View>
   );
 };

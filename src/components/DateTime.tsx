@@ -22,9 +22,11 @@ const styles = StyleSheet.create({
     color: '#FFFFFF'
   },
   datetimeContainer: {
+    flex: 1,
     backgroundColor: '#030006',
     borderRadius: 40,
     paddingHorizontal: 30,
-    paddingVertical: 18,
+    paddingVertical: 10,
+    justifyContent: 'center'
   }
 });

@@ -8,7 +8,7 @@ type LocationProps = {
 
 export const Location: FunctionComponent<LocationProps> = ({city, state}) => {
   return (
-    <View>
+    <View style={styles.locationContainer}>
       <Text style={styles.location}>{city} - {state}</Text>
     </View>
   );
@@ -21,4 +21,8 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: '#000000',
   },
+  locationContainer: {
+    flex: 1,
+    justifyContent: 'center',
+  }
 });

@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   dailySummaryContainer: {
-    gap: 16
+    gap: 16,
+    flex: 4,
+    justifyContent: 'center',
   }
 });

@@ -6,21 +6,32 @@ import { Metrics } from './src/components/Metrics';
 import { Temperature } from './src/components/Temperature';
 import { Weather } from './src/components/Weather';
 
+import data from './data.json'
+
 export default function App() {
+  const weatherData = getRandomSample();
+
+  function getRandomSample() {
+    return data[Math.floor(Math.random() * data.length)];
+  }
+
   return (
     <Container>
-      <Location city="Fortaleza" state="CE" />
-      <DateTime datetime="terça-feira, 20 de maio" />
-      <Weather temperature="" wind="" humidity="" />
-      <Temperature temperatureInDegrees="31º" />
+      <Location city={weatherData.city} state={weatherData.state} />
+      <DateTime datetime={weatherData.date} />
+      <Weather
+        temperature={weatherData.temperature}
+        wind={weatherData.wind}
+        humidity={weatherData.humidity}
+      />
+      <Temperature temperatureInDegrees={weatherData.temperature} />
       <DailySummary
-        content="Agora, sensação térmica de +34º.
-Possíveis pancadas de chuva ao final do dia."
+        content={weatherData.daily_summary}
       />
       <Metrics
-        wind="44 km/h"
-        humidity="48%"
-        visibility="1,6 km"
+        wind={weatherData.wind}
+        humidity={weatherData.humidity}
+        visibility={weatherData.visibility}
       />
     </Container>
   );
